@@ -61,7 +61,19 @@ body {
   padding: 5px 10px;
   background-color: lightseagreen;
 }
-.save-button:hover {
+
+.edit-button {
+  position: absolute;
+  width: 35px;
+  top: 70px;
+  right: 25px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightseagreen;
+}
+
+.save-button:hover,
+.edit-button:hover {
   background-color: green;
   color: white;
 }
@@ -74,4 +86,18 @@ body {
 .movie-warning {
   color: red;
   text-align: center;
+}
+
+/*Form*/
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px 20px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  outline: none;
 }
