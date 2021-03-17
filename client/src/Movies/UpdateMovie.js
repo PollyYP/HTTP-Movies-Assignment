@@ -32,11 +32,10 @@ function UpdateMovie() {
     event.preventDefault();
     axios
       .put(`http://localhost:5000/api/movies/${id}`, editMovie)
-      .then((res) => {
-        setEditMovie(res.data);
-        history.push(`/movies/${id}`);
-      })
+      .then((res) => setEditMovie(res.data))
       .catch((err) => console.log(err));
+
+    history.push(`/movies/${id}`);
   };
 
   return (
